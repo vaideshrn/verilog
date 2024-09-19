@@ -1,4 +1,4 @@
-module gates(a,b,y1,y2,y3,y4,y5,y6);
+module gates(a,b,y1,y2,y3,y4,y5,y6); //instead of gates use your desired testbench name 
 	 input a;
     input b;
     output y1,y2,y3,y4,y5,y6;
