@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module gatetest;
+module gatetest; //instead of gatetest use your desired testbench name 
 
 	// Inputs
 	reg a;
