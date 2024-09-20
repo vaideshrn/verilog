@@ -1,4 +1,4 @@
-module gateand (
+module gateor (
 input a,
 input b,
 output y
