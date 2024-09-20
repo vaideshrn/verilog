@@ -1,0 +1,14 @@
+module logic_ope(
+  input [3:0] a ,// a is 4 bit vector
+input [3:0] b , //b is 4 bitvector
+output [3:0] x, //outputs 4 bit vector
+output [3:0] y, output [3:0] z, output [3:0] p, output [3:0] q, output [3:0] r
+);
+
+assign x=a&b;
+assign y=a|b;
+assign z=a^b;
+assign p=~(a&b);
+assign q=~(a|b);
+assign r=~(a^b);
+endmodule
