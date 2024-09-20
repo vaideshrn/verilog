@@ -1,0 +1,7 @@
+module gatenot (
+input a,
+output y
+);
+
+assign y= ~a ;
+endmodule
