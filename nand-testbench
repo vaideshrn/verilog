@@ -1,0 +1,39 @@
+module testgatenand; // Instead of gatetest use your desired testbench name 
+
+	// Inputs
+	reg a;
+	reg b;
+
+	// Outputs
+	wire y;
+	// Instantiate the Unit Under Test (UUT)
+  //gatenand is the name of the file for which the test bench has been written 
+  gatenand uut (     
+		.a(a), 
+		.b(b), 
+		.y(y)
+	);
+
+	initial begin
+		// Set up VCD file for waveform dumping
+		$dumpfile("dump.vcd");
+		$dumpvars;
+
+		a = 0;
+		b = 0;
+		#100;
+		
+		a = 0;
+		b = 1;
+		#100;
+		
+		a = 1;
+		b = 0;
+		#100;
+		
+		a = 1;
+		b = 1;
+		#100;
+	end
+      
+endmodule
