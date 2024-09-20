@@ -1,0 +1,29 @@
+`timescale 1ns / 1ps
+
+module testgatenot; //  use your desired testbench name 
+
+	// Inputs
+	reg a;
+
+	// Outputs
+	wire y;
+	// Instantiate the Unit Under Test (UUT)
+    //use the file name for which the test bench has been made
+	gatenot uut (
+		.a(a),
+		.y(y)
+	);
+
+	initial begin
+		// Set up VCD file for waveform dumping
+		$dumpfile("dump.vcd");
+		$dumpvars;
+
+		a = 0;
+		#100;
+		
+		a = 1;
+		#100;
+	end
+      
+endmodule
