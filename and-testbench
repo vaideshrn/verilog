@@ -10,7 +10,7 @@ module testgateand; // use your desired testbench name
 	wire y;
 	// Instantiate the Unit Under Test (UUT)
 	//here use the design files name before uut
-  gatenand uut (
+  gateand uut (
 		.a(a), 
 		.b(b), 
 		.y(y)
