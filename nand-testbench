@@ -1,4 +1,6 @@
-module testgatenand; // Instead of gatetest use your desired testbench name 
+`timescale 1ns / 1ps
+
+module testgatenand; // use your desired testbench name 
 
 	// Inputs
 	reg a;
@@ -7,8 +9,8 @@ module testgatenand; // Instead of gatetest use your desired testbench name
 	// Outputs
 	wire y;
 	// Instantiate the Unit Under Test (UUT)
-  //gatenand is the name of the file for which the test bench has been written 
-  gatenand uut (     
+	//here use the design files name before uut
+  gatenand uut (
 		.a(a), 
 		.b(b), 
 		.y(y)
